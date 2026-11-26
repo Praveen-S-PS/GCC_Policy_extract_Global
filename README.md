@@ -175,11 +175,3 @@ GCC_News_incentive_tracker/
 ## News digest pipeline (separate)
 
 `main.py` is an earlier, independent pipeline. It reads a Google News RSS search (configured in `config.py`), keeps articles that look GCC relevant, tags state, category, policy and incentive type, stores them in SQLite under `data/`, and exports an Excel report. It shares no code path with `country_extractor.py`.
-
-## Before publishing the repository
-
-The working folder holds large or generated material that does not belong in version control: `.venv/`, `__pycache__/`, `sources/` (about 780 MB of downloaded PDFs), `output/`, `data/` and `logs/`. Add them to a `.gitignore` before the first push.
-
-## License
-
-No license file has been added yet. Add one before making the repository public.
